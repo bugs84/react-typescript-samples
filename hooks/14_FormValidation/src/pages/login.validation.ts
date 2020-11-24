@@ -3,7 +3,13 @@ import { createFormikValidation } from "@lemoncode/fonk-formik";
 
 const validationSchema: ValidationSchema = {
   field: {
-    login: [Validators.required],
+    login: [
+        Validators.required,
+      {
+        validator: Validators.minLength,
+        customArgs: { length: 4 }
+      }
+    ],
     password: [Validators.required],
   },
 };

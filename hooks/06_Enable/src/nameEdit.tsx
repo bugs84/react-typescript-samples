@@ -6,6 +6,7 @@ interface Props {
   onNameUpdated: () => any;
   onEditingNameUpdated: (newEditingName: string) => any;
   disabled: boolean;
+  cause: string;
 }
 
 export const NameEditComponent: React.FC<Props> = (props) => {
@@ -24,6 +25,7 @@ export const NameEditComponent: React.FC<Props> = (props) => {
       <button onClick={onNameSubmit} disabled={props.disabled}>
         Change
       </button>
+      <label>{props.cause}</label>
     </>
   );
 };

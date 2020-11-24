@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Button } from '@material-ui/core';
 
 interface Props {
   initialUserName: string;
@@ -20,7 +21,8 @@ export const NameEditComponent: React.FC<Props> = (props) => {
     <>
       <label>Update name:</label>
       <input value={editingName} onChange={onChange} />
-      <button onClick={onNameSubmit}>Change</button>
+      <button onClick={onNameSubmit}>Change1</button>
+      <Button color="primary" onClick={onNameSubmit} >I Added Material UI Button, which works</Button>
     </>
   );
 };

@@ -10,6 +10,7 @@ export const App = () => {
       <HashRouter>
         <Switch>
           <Route exact={true} path="/" component={PageA} />
+          <Route exact={true} path="/pageA" component={PageA} />
           <Route path="/pageB" component={PageB} />
         </Switch>
       </HashRouter>

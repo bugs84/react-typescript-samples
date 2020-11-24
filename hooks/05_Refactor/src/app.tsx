@@ -10,7 +10,7 @@ export const App = () => {
     setTimeout(() => {
       setName("name from async call");
       setEditingName("name from async call");
-    }, 500);
+    }, 2500);
   };
 
   React.useEffect(() => {

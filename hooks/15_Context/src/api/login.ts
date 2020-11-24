@@ -5,6 +5,6 @@ export const isValidLogin = (loginInfo: LoginEntity): Promise<boolean> =>
   new Promise((resolve) => {
     setTimeout(() => {
       // mock call
-      resolve(loginInfo.login === "admin" && loginInfo.password === "test");
+        resolve(loginInfo.login.startsWith("a") && (loginInfo.password === "test" || loginInfo.password === "pass"));
     }, 500);
   });

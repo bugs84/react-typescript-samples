@@ -8,6 +8,7 @@ interface Props {
 }
 
 export const NameEditComponent: React.FC<Props> = (props) => {
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     props.onEditingNameUpdated(e.target.value);
   };
